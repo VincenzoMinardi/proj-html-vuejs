@@ -4,9 +4,11 @@ import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 export default {
-  AppHeader,
-  AppMain,
-  AppFooter,
+  components: {
+    AppHeader,
+    AppMain,
+    AppFooter,
+  },
 };
 </script>
 
@@ -17,5 +19,9 @@ export default {
 </template>
 
 <style>
-@import "../node_modules/bootstrap/scss/bootstrap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
