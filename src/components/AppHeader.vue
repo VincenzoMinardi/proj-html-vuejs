@@ -1,4 +1,15 @@
-<script></script>
+<script>
+import { store } from "../store";
+
+export default {
+  components: {},
+  data() {
+    return {
+      store,
+    };
+  },
+};
+</script>
 
 <template>
   <div class="container">
@@ -7,14 +18,14 @@
     </div>
     <div>
       <ul class="element">
-        <li>Home</li>
-        <li>Pages</li>
-        <li>Portfolio</li>
-        <li>Blog</li>
-        <li>Shop</li>
-        <li>Elements</li>
+        <li v-for="element in store.ArrHeader" :key="element">
+          {{ element }}
+        </li>
+
+        <li>
+          <img src="../assets/img/svg/svg-1.svg" alt="" />
+        </li>
       </ul>
-      <img src="../assets/img/" alt="" />
     </div>
   </div>
 </template>
