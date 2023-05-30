@@ -30,7 +30,7 @@ export default {
                 <div>{{ element.email }}</div>
                 <hr>
             </div>
-            <button>Submit</button>
+            <button class="btn-hover">Submit</button>
         </div>
     </div>
     <div class="footer">
@@ -39,17 +39,17 @@ export default {
             <p>{{ element.twoParagraf }}</p>
         </div>
         <div class="cont-icon">
-            <div class=" icons">
+            <div class=" icons instagram">
                 <i class=" icon fa-brands fa-square-instagram" style="color: #ffffff;"></i>
             </div>
-            <div class="icons">
+            <div class="icons facebook">
                 <i class=" icon fa-brands fa-facebook" style="color: #ffffff;"></i>
             </div>
-            <div class="icons">
+            <div class="icons twitter">
                 <i class=" icon fa-brands fa-twitter" style="color: #ffffff;"></i>
             </div>
-            <div class="icons">
-                <i class=" icon fa-brands fa-pinterest-p" style="color: #ffdiv;"></i>
+            <div class="icons pinterest">
+                <i class=" icon fa-brands fa-pinterest-p" style="color: #ffffff;"></i>
             </div>
         </div>
     </div>
@@ -75,18 +75,22 @@ hr {
 }
 
 .input,
-button {
+.btn-hover {
     margin-left: 51rem;
     margin-bottom: 2rem;
 }
 
-button {
+.btn-hover {
     border-radius: 3rem;
     margin-top: 2rem;
     height: 50px;
     width: 160px;
     border-color: #69a9ae;
     background-color: white;
+}
+
+.btn-hover:hover {
+    background-color: #69a9ae;
 }
 
 .footer {
@@ -105,20 +109,40 @@ button {
 
 .cont-icon {
     text-align: center;
-    margin-left: 3rem;
+
 
 }
 
 .icon {
     font-size: 2rem;
 
+
+
 }
 
 
 .icons {
-    // background-color: rgb(105, 169, 170);
+    border-radius: 3rem;
     display: inline-block;
-    height: 30px;
-    width: 30px;
+    text-align: center;
+    padding: .5rem;
+    width: 50px;
+    margin-inline: 1.5rem;
 }
-</style>
+
+.instagram:hover {
+    background-color: rgb(105, 169, 170);
+}
+
+.facebook:hover {
+    background-color: rgb(247, 210, 147);
+}
+
+.twitter:hover {
+    background-color: rgb(247, 188, 168);
+}
+
+.pinterest:hover {
+    background-color: rgb(216, 213, 151);
+}
+</style>    

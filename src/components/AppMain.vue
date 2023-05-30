@@ -114,6 +114,11 @@ export default {
   background-color: white;
 }
 
+.bt-read:hover {
+  background-color: #69a9ae;
+
+}
+
 .cont-flex {
   display: flex;
   align-items: center;
@@ -160,6 +165,10 @@ export default {
       font-size: 1.5rem;
     }
   }
+}
+
+.card:hover {
+  background-color: #69a9ae;
 }
 
 .price {

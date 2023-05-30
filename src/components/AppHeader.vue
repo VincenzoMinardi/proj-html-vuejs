@@ -18,7 +18,7 @@ export default {
     </div>
     <div>
       <ul class="element">
-        <li class="hover" v-for="element in store.ArrHeader" :key="element">
+        <li class="line-button" v-for="element in store.ArrHeader" :key="element">
           {{ element }}
         </li>
 
@@ -44,8 +44,30 @@ export default {
     list-style: none;
   }
 
-  .hover:hover {
-    color: red;
+  .line-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
   }
+
+  .line-button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #f00;
+
+  }
+
+  .line-button:hover::after {
+    width: 100%;
+  }
+
 }
 </style>
