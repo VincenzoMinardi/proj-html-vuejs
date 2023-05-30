@@ -34,6 +34,13 @@ export default {
             <button>Submit</button>
         </div>
     </div>
+    <div class="footer">
+        <div class="content" v-for="element in store.ArrFooter" :key="element">
+            <h1>{{ element.twoTitle }}</h1>
+            <p>{{ element.twoParagraf }}</p>
+        </div>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -66,5 +73,17 @@ button {
     width: 160px;
     border-color: #69a9ae;
     background-color: white;
+}
+
+.footer {
+    margin-top: 4rem;
+    background-image: url(../assets/img/h2-footer-img-01.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 6rem;
+
+    .content {
+        text-align: center;
+    }
 }
 </style>
