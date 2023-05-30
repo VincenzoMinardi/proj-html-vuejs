@@ -10,6 +10,30 @@ export const store = reactive({
       imgOne: "hover-block.png",
 
       belowTitle: "What we do?",
+
+      belowParagraf:
+        "Lorem ipsum dolor amet aenean consectetuer soiic adipiscing elit. Aenean commodo ligula eget dolor pretium quis sem",
+
+      belowTextOne: "Beautiful illustrations",
+
+      belowTextTwo: "Brand strategies",
+
+      belowTextTree: "Qualified support",
+
+      belowTextFour: "Books & magazines",
+    },
+  ],
+
+  ArrCard: [
+    {
+      title: "Basic",
+      price: "99$",
+      text: "5 Design concepts Full copyright ownership Art direction Top level creatives No money back",
+
+      titleTwoCard: "Standard",
+      priceTwo: "119$",
+
+      priceThree: "139$",
     },
   ],
 });
