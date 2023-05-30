@@ -43,5 +43,11 @@ export const store = reactive({
       paragraf:
         " Lorem ipsum dolor sit amet, consectetuer sociis quis adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum.",
     },
+
+    {
+      twoTitle: "Bryson",
+      twoParagraf:
+        "Sometimes doing something seemingly demanding turns out to be fun. Here's the proof-Bryson. Your brand new portfolio",
+    },
   ],
 });
