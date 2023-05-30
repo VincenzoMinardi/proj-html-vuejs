@@ -38,17 +38,19 @@ export default {
             <h1>{{ element.twoTitle }}</h1>
             <p>{{ element.twoParagraf }}</p>
         </div>
-        <div>
-            <i class="fa-brands fa-square-instagram"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-square-facebook"></i>
-        </div>
-        <div>
-            <i class="fa-brands fa-twitter"></i>
-        </div>
-        <div>
-
+        <div class="cont-icon">
+            <div class=" icons">
+                <i class=" icon fa-brands fa-square-instagram" style="color: #ffffff;"></i>
+            </div>
+            <div class="icons">
+                <i class=" icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+            <div class="icons">
+                <i class=" icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+            </div>
+            <div class="icons">
+                <i class=" icon fa-brands fa-pinterest-p" style="color: #ffdiv;"></i>
+            </div>
         </div>
     </div>
 </template>
@@ -95,9 +97,28 @@ button {
     padding: 6rem;
 
     .content {
-        padding: 6rem;
+        padding: 3rem;
         width: 100%;
         text-align: center;
     }
+}
+
+.cont-icon {
+    text-align: center;
+    margin-left: 3rem;
+
+}
+
+.icon {
+    font-size: 2rem;
+
+}
+
+
+.icons {
+    // background-color: rgb(105, 169, 170);
+    display: inline-block;
+    height: 30px;
+    width: 30px;
 }
 </style>

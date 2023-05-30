@@ -25,6 +25,8 @@ export default {
 </template>
 
 <style>
+@import "@fortawesome/fontawesome-free/css/all.css";
+
 * {
   margin: 0;
   padding: 0;

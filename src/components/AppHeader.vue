@@ -18,7 +18,7 @@ export default {
     </div>
     <div>
       <ul class="element">
-        <li v-for="element in store.ArrHeader" :key="element">
+        <li class="hover" v-for="element in store.ArrHeader" :key="element">
           {{ element }}
         </li>
 
@@ -42,6 +42,10 @@ export default {
     display: flex;
     gap: 2rem;
     list-style: none;
+  }
+
+  .hover:hover {
+    color: red;
   }
 }
 </style>
