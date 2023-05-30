@@ -1,15 +1,16 @@
 <script>
 import { store } from "../store";
 
+
 export default {
     data() {
         return {
             store,
+
         };
     },
 };
 </script>
-
 <template>
     <div class="container">
         <div v-for="element in store.ArrFooter" :key="element">
@@ -24,24 +25,35 @@ export default {
                 </div>
             </div>
             <div class="input">
-                <div>Name</div>
+                <div>{{ element.name }}</div>
                 <hr>
-                <div>
-                    <div>Email</div>
-                    <hr>
-                </div>
+                <div>{{ element.email }}</div>
+                <hr>
             </div>
             <button>Submit</button>
         </div>
     </div>
     <div class="footer">
-        <div class="content" v-for="element in store.ArrFooter" :key="element">
+        <div v-for="element in store.ArrCopyright" :key="element" class="content">
             <h1>{{ element.twoTitle }}</h1>
             <p>{{ element.twoParagraf }}</p>
         </div>
+        <span>
+            <i class="fa-brands fa-square-instagram"></i>
+        </span>
+        <span>
+            <i class="fa-brands fa-square-facebook"></i>
+        </span>
+        <span>
+            <i class="fa-brands fa-twitter"></i>
+        </span>
+        <span>
 
+        </span>
     </div>
 </template>
+  
+
 
 <style lang="scss" scoped>
 .container {
@@ -83,6 +95,8 @@ button {
     padding: 6rem;
 
     .content {
+        padding: 6rem;
+        width: 100%;
         text-align: center;
     }
 }

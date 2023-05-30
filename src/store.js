@@ -42,8 +42,12 @@ export const store = reactive({
       title: "Get in touch and say hello",
       paragraf:
         " Lorem ipsum dolor sit amet, consectetuer sociis quis adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum.",
+      name: "Name",
+      email: "Email",
     },
+  ],
 
+  ArrCopyright: [
     {
       twoTitle: "Bryson",
       twoParagraf:
