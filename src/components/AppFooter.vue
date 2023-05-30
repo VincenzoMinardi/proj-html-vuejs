@@ -38,18 +38,18 @@ export default {
             <h1>{{ element.twoTitle }}</h1>
             <p>{{ element.twoParagraf }}</p>
         </div>
-        <span>
+        <div>
             <i class="fa-brands fa-square-instagram"></i>
-        </span>
-        <span>
+        </div>
+        <div>
             <i class="fa-brands fa-square-facebook"></i>
-        </span>
-        <span>
+        </div>
+        <div>
             <i class="fa-brands fa-twitter"></i>
-        </span>
-        <span>
+        </div>
+        <div>
 
-        </span>
+        </div>
     </div>
 </template>
   
