@@ -36,4 +36,12 @@ export const store = reactive({
       priceThree: "139$",
     },
   ],
+
+  ArrFooter: [
+    {
+      title: "Get in touch and say hello",
+      paragraf:
+        " Lorem ipsum dolor sit amet, consectetuer sociis quis adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum.",
+    },
+  ],
 });
