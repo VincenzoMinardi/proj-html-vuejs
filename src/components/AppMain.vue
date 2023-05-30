@@ -1,9 +1,12 @@
 <script>
 import { store } from "../store";
+import AppCards from './AppCards.vue'
 
 
 export default {
-  components: {},
+  components: {
+    AppCards,
+  },
   data() {
     return {
       store,
@@ -31,7 +34,7 @@ export default {
         <div class="below-container">
           <h1>{{ element.belowTitle }}</h1>
           <div>{{ element.belowParagraf }}</div>
-          <button class="bt-read">Read more</button>
+          <button class="bt-read">Read more <i class="fa-solid fa-caret-right" style="color: #000000;"></i></button>
         </div>
         <div class="cont-flex">
           <img class="size-img" src="../assets/img/h2-icon-01.png" alt="" />
@@ -45,30 +48,14 @@ export default {
       <img class="big-image" src="../assets/img/h2-img-2.jpg" alt="" />
       <img class="video-btn" src="../assets/img/main-home-video-button-img-01.png" alt="" />
     </div>
-    <div v-for="card in store.ArrCard" :key="card" class="cont-card">
-      <div class="card">
-        <h1>{{ card.title }}</h1>
-        <h2 class="price">{{ card.price }}</h2>
-        <p class="text">{{ card.text }}</p>
-      </div>
-      <div class="card">
-        <h1>{{ card.titleTwoCard }}</h1>
-        <h2 class="price">{{ card.priceTwo }}</h2>
-        <p class="text">{{ card.text }}</p>
-      </div>
-      <div class="card">
-        <h1>{{ card.title }}</h1>
-        <h2 class="price">{{ card.priceThree }}</h2>
-        <p class="text">{{ card.text }}</p>
-      </div>
-    </div>
+    <AppCards v-for="card in store.ArrCard" :key="card.id" :cards="card" />
   </div>
 </template>
 
 <style lang="scss" scoped>
 .big-image {
   background-image: url(../assets/img/h2-background-img-02.png);
-  background-repeat: repeat-y;
+  background-repeat: repeat;
 }
 
 .container {
@@ -142,36 +129,5 @@ export default {
     top: 460px;
     left: 800px;
   }
-}
-
-.cont-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  margin-top: 2rem;
-  padding: 6rem;
-
-  .card {
-    padding: 3rem;
-    text-align: center;
-    border-radius: 4rem;
-    height: 450px;
-    width: 300px;
-    border: 1px solid yellow;
-
-    .text {
-      margin-top: 3rem;
-      font-size: 1.5rem;
-    }
-  }
-}
-
-.card:hover {
-  background-color: #69a9ae;
-}
-
-.price {
-  font-size: 3rem;
 }
 </style>

@@ -29,10 +29,8 @@ export const store = reactive({
       title: "Basic",
       price: "99$",
       text: "5 Design concepts Full copyright ownership Art direction Top level creatives No money back",
-
       titleTwoCard: "Standard",
       priceTwo: "119$",
-
       priceThree: "139$",
     },
   ],

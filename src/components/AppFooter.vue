@@ -30,7 +30,7 @@ export default {
                 <div>{{ element.email }}</div>
                 <hr>
             </div>
-            <button class="btn-hover">Submit</button>
+            <button class="btn-hover">Submit <i class="fa-solid fa-caret-right" style="color: #000000;"></i></button>
         </div>
     </div>
     <div class="footer">
