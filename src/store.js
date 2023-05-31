@@ -7,7 +7,7 @@ export const store = reactive({
       title: "We are Bryson, New York-based art & design studio",
       paragraf:
         "Here at Bryson it only takes smidgen of imagination and we've already prepared ourselves for future challeges. Take a peek and see if you recognize the tardemark ingredients of our work. ",
-      imgOne: "hover-block.png",
+      imgHover: "hover-block.png",
 
       belowTitle: "What we do?",
 
